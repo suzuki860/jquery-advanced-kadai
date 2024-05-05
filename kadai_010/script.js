@@ -64,6 +64,9 @@ $(function () {
     $('#message').blur(function () {
         inputCheck();
     });
+    $('#prefecture').blur(function () {
+        inputCheck();
+    });    
     $('#agree').click(function () {
         inputCheck();
     });
@@ -140,10 +143,10 @@ $(function () {
             $('#prefecture').css('background-color', '#f79999');
             error = true;
             message += '都道府県を選択してください。\n';
-          } else {
+        } else {
             //エラーなし
             $('#prefecture').css('background-color', '#fafafa');
-          }
+        }
 
         //   個人情報のチェックボックスのチェック
         if ($('#agree').prop('checked') == false) {
